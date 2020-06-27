@@ -83,7 +83,7 @@ services:
       - postgres
       {% endif %}
     command: /usr/bin/launch_awx_task.sh
-    hostname: {{ awx_task_hostname }}
+    hostname: {{ awx_task_fqdn }}
     user: root
     restart: unless-stopped
     volumes:

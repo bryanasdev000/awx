@@ -8,3 +8,5 @@ postgresql_version: "10"
 postgresql_image: "postgres:{{postgresql_version}}"
 
 compose_start_containers: true
+
+awx_task_fqdn: "{{ ansible_fqdn }}"
